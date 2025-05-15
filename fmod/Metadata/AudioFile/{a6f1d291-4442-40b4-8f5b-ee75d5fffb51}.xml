@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{a6f1d291-4442-40b4-8f5b-ee75d5fffb51}">
+		<property name="assetPath">
+			<value>Sfx/Footsteps/Stone/Foot_stone_jump.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.50185416666666671</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9a8ea1b0-83f1-40f6-be74-5b8d12a4bf64}</destination>
+		</relationship>
+	</object>
+</objects>
