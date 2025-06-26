@@ -38,7 +38,7 @@ public class Outside_foot_switch : MonoBehaviour
                 snapshotActivated = !snapshotActivated;
                 Debug.Log(snapshotActivated);
             }
-            else if ((hit.collider.CompareTag("Inside_stone") || hit.collider.CompareTag("Inside_wood")) && snapshotActivated == true)
+            else if ((hit.collider.CompareTag("Stone") || hit.collider.CompareTag("Wood")) && snapshotActivated == true)
             {
                 // mechanika snapshotu
                 Outside.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);

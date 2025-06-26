@@ -4,6 +4,9 @@
 		<property name="name">
 			<value>Inside</value>
 		</property>
+		<relationship name="masters">
+			<destination>{790b3fbd-f55c-46bd-81b2-6ad8e649a3bb}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{4f1ca2c3-f9a5-44bd-99a5-d77776fe59cf}</destination>
 		</relationship>
@@ -16,9 +19,29 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{4f1ca2c3-f9a5-44bd-99a5-d77776fe59cf}">
 		<relationship name="effects">
+			<destination>{921096fe-d612-4809-9c13-b3a1c5113ef1}</destination>
 			<destination>{be1f6a69-e821-4e3e-87d6-5f943bb388aa}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{e3a29bce-12ff-435d-85cc-757612666aab}" />
+	<object class="MultibandEqEffect" id="{921096fe-d612-4809-9c13-b3a1c5113ef1}">
+		<property name="frequencyA">
+			<value>22000</value>
+		</property>
+		<property name="qualityA">
+			<value>0.100000001</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{3965ebf0-2f7a-4d44-bf08-ac965f55fcbf}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{be1f6a69-e821-4e3e-87d6-5f943bb388aa}" />
+	<object class="ADSRModulator" id="{3965ebf0-2f7a-4d44-bf08-ac965f55fcbf}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>frequencyA</value>
+		</property>
+		<property name="initialValue">
+			<value>-100</value>
+		</property>
+	</object>
 </objects>

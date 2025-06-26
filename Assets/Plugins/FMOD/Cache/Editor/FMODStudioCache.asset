@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6686314753243115123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Health
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Health
+  Guid:
+    Data1: 390795907
+    Data2: 1337213161
+    Data3: 2087042450
+    Data4: 499185845
+  Banks:
+  - {fileID: -3151122037639446142}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-5728897403418108406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53,6 +80,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 77538
+--- !u!114 &-3808837868108265621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Room
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Room
+  Guid:
+    Data1: -1162114196
+    Data2: 1119368573
+    Data3: -2129103947
+    Data4: 1846795040
+  Banks:
+  - {fileID: -3151122037639446142}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-3151122037639446142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,10 +122,10 @@ MonoBehaviour:
   Path: fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638847166313804977
+  lastModified: 638865307804768208
   FileSizes:
   - Name: Desktop
-    Value: 6896480
+    Value: 6931008
   Exists: 1
 --- !u!114 &-1938139326730541578
 MonoBehaviour:
@@ -128,6 +182,32 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 80000
+--- !u!114 &-598247586873329213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Jump/Footsteps_surface
+  m_EditorClassIdentifier: 
+  Name: Footsteps_surface
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1933807905
+    data2: 2092801580
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Stone
+  - Wood
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,13 +231,45 @@ MonoBehaviour:
   - {fileID: -3993278794664626259}
   - {fileID: -1938139326730541578}
   - {fileID: 8635932387422628104}
+  - {fileID: 596713472586172427}
+  - {fileID: 4876014879480535209}
+  - {fileID: -6686314753243115123}
+  - {fileID: -3808837868108265621}
   EditorParameters: []
   MasterBanks:
   - {fileID: -3151122037639446142}
   StringsBanks:
   - {fileID: 5334948663001793509}
-  cacheTime: 638847166313814965
+  cacheTime: 638865307804783245
   cacheVersion: 131617
+--- !u!114 &596713472586172427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/Jump
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/Jump
+  Guid:
+    Data1: -951417915
+    Data2: 1160518860
+    Data3: 1209700012
+    Data4: 1368632027
+  Banks:
+  - {fileID: -3151122037639446142}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -598247586873329213}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 487
 --- !u!114 &1252239877866625618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,9 +307,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Footsteps/FootSwitcher
+  m_Name: parameter:/Footsteps/Footsteps_surface
   m_EditorClassIdentifier: 
-  Name: FootSwitcher
+  Name: Footsteps_surface
   StudioPath: 
   Min: 0
   Max: 1
@@ -211,6 +323,34 @@ MonoBehaviour:
   - Stone
   - Wood
   Exists: 1
+--- !u!114 &4876014879480535209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/Land
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/Land
+  Guid:
+    Data1: 1489250300
+    Data2: 1092962272
+    Data3: 465576357
+    Data4: 945668504
+  Banks:
+  - {fileID: -3151122037639446142}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 5445647153907040414}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 783
 --- !u!114 &5334948663001793509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,10 +366,36 @@ MonoBehaviour:
   Path: fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638847166313814965
+  lastModified: 638865307804783245
   FileSizes:
   - Name: Desktop
-    Value: 1264
+    Value: 1704
+  Exists: 1
+--- !u!114 &5445647153907040414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Land/Footsteps_surface
+  m_EditorClassIdentifier: 
+  Name: Footsteps_surface
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1933807905
+    data2: 2092801580
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Stone
+  - Wood
   Exists: 1
 --- !u!114 &7916935210928978135
 MonoBehaviour:

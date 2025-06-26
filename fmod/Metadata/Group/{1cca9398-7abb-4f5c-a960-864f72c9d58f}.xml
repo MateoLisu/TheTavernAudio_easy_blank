@@ -7,6 +7,10 @@
 		<property name="name">
 			<value>Outisde</value>
 		</property>
+		<relationship name="masters">
+			<destination>{790b3fbd-f55c-46bd-81b2-6ad8e649a3bb}</destination>
+			<destination>{a1e89efc-6fac-4b14-b7be-2059acc95684}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{c0d5fcd5-0a7f-4cc8-bbf6-4f0010be5706}</destination>
 		</relationship>

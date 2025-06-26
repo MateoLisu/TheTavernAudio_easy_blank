@@ -16,6 +16,7 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{643f069b-ffd9-4a67-88b2-251300458bac}">
 		<relationship name="effects">
+			<destination>{6a82de4f-54bf-4c64-86cd-39426863dab4}</destination>
 			<destination>{10ecb9d0-1f22-420d-bce2-c9370710009f}</destination>
 		</relationship>
 	</object>
@@ -24,5 +25,24 @@
 			<value>2</value>
 		</property>
 	</object>
+	<object class="MultibandEqEffect" id="{6a82de4f-54bf-4c64-86cd-39426863dab4}">
+		<property name="frequencyA">
+			<value>21999.9902</value>
+		</property>
+		<property name="qualityA">
+			<value>0.100000001</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{e2390719-60b5-4ac2-bb77-3e3685dd129e}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{10ecb9d0-1f22-420d-bce2-c9370710009f}" />
+	<object class="ADSRModulator" id="{e2390719-60b5-4ac2-bb77-3e3685dd129e}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>frequencyA</value>
+		</property>
+		<property name="initialValue">
+			<value>-100</value>
+		</property>
+	</object>
 </objects>
